@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    height: 80px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: white;
+    transition: box-shadow 0.5s linear;
+
+}
+
+header .container {
+    line-height: 80px;
+}
+
+nav ul {
+    float: right;
+    vertical-align: middle;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    padding: 10px 16px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    background-color: rgb(49, 99, 236);
+    color: white;
+    transition: background-color 0.4s cubic-bezier(1, 0, 0, 1), color 0.1s ease;
+}
+
+span#logo {
+    color: #222;
+    font-weight: bold;
+    float: left;
+    height: 100%;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+#home {
+    margin-top: 80px;
+}
+
+section {
+    padding: 60px 0;
+}
+
+#content-home {
+    flex: 1;
+}
+
+#home .image-home {
+    flex: 1;
+}
+
+.image-home img {
+    width: 500px;
+    position: relative;
+    transition: 0.2s linear;
+    right: 0;
+}
+
+#content-home h1 {
+    font-size: 4rem;
+}
+
+#content-home p {
+    margin-top: 24px;
+    font-weight: 100;
+    font-size: 2rem;
+
+}
+
+#content-home {
+    padding-left: 30px;
+
+}
+
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 14px 20px;
+    margin: 20px 0;
+    transition: background-color 0.4s linear, color 0.2s linear;
+    border: 0px;
+}
+
+.btn-primary {
+    background-color: rgb(49, 99, 236);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: rgb(107, 146, 255);
+    color: white;
+}
+
+h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+#portfolio {
+    background-color: rgb(245, 248, 255);
+}
+
+.project {
+    height: 240px;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.4s ease;
+    overflow: hidden;
+}
+
+.project:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+    overflow: hidden;
+}
+
+#profile img {
+    flex: 1;
+}
+
+#profile #detail-profile {
+    flex: 2;
+}
+
+#profile h2 {
+    margin: 10px 0;
+    color: #333;
+    font-size: 28px;
+}
+
+#profile h3 {
+    color: #666;
+    margin-top: 34px;
+    font-weight: normal;
+}
+
+#profile {
+    padding-bottom: 0;
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact h2 {
+    text-align: center;
+}
+
+#contact form {
+    display: inline-block;
+    margin-top: 40px;
+    width: 100%;
+}
+
+#contact input,
+#contact textarea {
+    width: 50%;
+    padding: 10px 10px;
+    border-radius: 4px;
+    border: 1.5px solid rgb(202, 202, 202);
+    margin-bottom: 20px;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    outline: none;
+    border: 1.5px solid rgb(79, 126, 255);
+
+}
+
+#contact label {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+footer {
+    padding: 40px 20px;
+    background-color: rgb(49, 99, 236);
+    color: #fff;
+    text-align: center;
+}
+
+#logo-footer {
+    font-weight: bold;
+    height: 100%;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+footer ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+footer ul li {
+    margin-top: 14px;
+    font-weight: normal;
+}
