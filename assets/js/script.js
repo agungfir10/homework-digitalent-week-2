@@ -19,12 +19,6 @@ function blurring() {
   imageHome.style.bottom = `${load / 0.5}px`;
 }
 
-const scale = (num, in_min, in_max, out_min, out_max) => {
-  return ((num - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min;
-};
-
-// https://stackoverflow.com/questions/10756313/javascript-jquery-map-a-range-of-numbers-to-another-range-of-numbers
-
 document.addEventListener("scroll", function () {
   if (window.scrollY >= 100) {
     document.getElementsByTagName("header")[0].style.boxShadow =
